@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 0.5rem;
+}
+
+.header {
+  background-color: #ff6600;
+  white-space: nowrap;
+  padding: 0.5rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  height: 1.1rem;
+  margin-bottom: -1.5px;
+}
+
+.header-title {
+  font-weight: 700;
+  margin-left: 0.25rem;
+  margin-right: 0.3rem;
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.header-link {
+  color: white;
+  text-decoration: none;
+  margin: 0.2rem;
+}
