@@ -38,3 +38,19 @@ body {
   text-decoration: none;
   margin: 0.2rem;
 }
+
+.gray {
+  margin-top: 0.25em;
+  color: #828282;
+}
+
+.upvote {
+  font-size: 14px;
+  vertical-align: top;
+  color: #828282;
+  margin-left: 0.25rem;
+}
+
+.favorite {
+  cursor: pointer;
+}
