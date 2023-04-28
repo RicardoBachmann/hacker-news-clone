@@ -54,3 +54,7 @@ body {
 .favorite {
   cursor: pointer;
 }
+
+.error {
+  color: red;
+}
