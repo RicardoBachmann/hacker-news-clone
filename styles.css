@@ -9,6 +9,15 @@ body {
   margin: 0.5rem;
 }
 
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.active {
+  border-bottom: 1px solid white;
+}
+
 .header {
   background-color: #ff6600;
   white-space: nowrap;
@@ -39,6 +48,11 @@ body {
   margin: 0.2rem;
 }
 
+#route-container {
+  background-color: rgb(246, 246, 239);
+  padding: 0.5rem 1.2rem;
+}
+
 .gray {
   margin-top: 0.25em;
   color: #828282;
@@ -57,4 +71,31 @@ body {
 
 .error {
   color: red;
+}
+
+.comment-header {
+  color: #828282;
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.comment-text {
+  margin: 0.4em 0;
+  font-size: 0.9rem;
+}
+
+.nested-comments {
+  margin-left: 4em;
+  margin-bottom: 0.5em;
+  padding-top: 0.3em;
+  padding-left: 0.75em;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(229, 229, 229);
+  margin: 1em 0;
+  padding: 0;
 }
