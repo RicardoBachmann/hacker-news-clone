@@ -1,15 +1,26 @@
 import view from "../utils/view.js";
 import Story from "../components/Story.js";
 import baseUrl from "../utils/baseUrl.js";
+import checkFavorite from "../utils/checkFavorite.js";
+import store from "../store.js";
 
 export default async function Stories(path) {
+  const { favorites } = store.getState();
   const stories = await getStories(path);
   const hasStories = stories.length > 0;
 
   view.innerHTML = `<div>
   ${
     hasStories
-      ? stories.map((story, i) => Story({ ...story, index: i + 1 })).join("")
+      ? stories
+          .map((story, i) =>
+            Story({
+              ...story,
+              index: i + 1,
+              isFavorite: checkFavorite(favorites, story),
+            })
+          )
+          .join("")
       : "No stories"
   }
   </div>`;
